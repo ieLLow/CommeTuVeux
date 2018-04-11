@@ -146,7 +146,7 @@ RectTransform:
   - {fileID: 610581134}
   - {fileID: 276323424}
   m_Father: {fileID: 1552304682}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -336,7 +336,7 @@ GameObject:
   - component: {fileID: 183627290}
   - component: {fileID: 183627289}
   m_Layer: 5
-  m_Name: RoundLeft 4
+  m_Name: RoundLeft 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -354,7 +354,7 @@ RectTransform:
   m_Children:
   - {fileID: 1821819404}
   m_Father: {fileID: 1239256724}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.19712694, y: 0}
   m_AnchorMax: {x: 0.29900002, y: 1}
@@ -394,6 +394,74 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 183627287}
+--- !u!1 &207572370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 207572371}
+  - component: {fileID: 207572373}
+  - component: {fileID: 207572372}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &207572371
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 207572370}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1552304682}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &207572372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 207572370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: f996b685a81686045a8b3629af25260f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &207572373
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 207572370}
 --- !u!1 &276323423
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,7 +750,7 @@ GameObject:
   - component: {fileID: 546169980}
   - component: {fileID: 546169979}
   m_Layer: 5
-  m_Name: RoundLeft 1
+  m_Name: RoundLeft 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -700,7 +768,7 @@ RectTransform:
   m_Children:
   - {fileID: 1936544880}
   m_Father: {fileID: 1239256724}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.648287, y: 0}
   m_AnchorMax: {x: 0.75000006, y: 1}
@@ -1492,7 +1560,7 @@ RectTransform:
   m_Children:
   - {fileID: 86483216}
   m_Father: {fileID: 1552304682}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.328, y: 0.3333475}
   m_AnchorMax: {x: 0.66850746, y: 0.6666101}
@@ -1524,13 +1592,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 546169978}
-  - {fileID: 1829039470}
-  - {fileID: 853294583}
-  - {fileID: 183627288}
   - {fileID: 1698819042}
+  - {fileID: 183627288}
+  - {fileID: 853294583}
+  - {fileID: 1829039470}
+  - {fileID: 546169978}
   m_Father: {fileID: 1552304682}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.046000004, y: 0.8963051}
   m_AnchorMax: {x: 0.3504881, y: 0.9493475}
@@ -1548,7 +1616,7 @@ GameObject:
   - component: {fileID: 1244862234}
   - component: {fileID: 1244862233}
   m_Layer: 5
-  m_Name: RoundLeftWin 5
+  m_Name: RoundLeftWin 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1771,7 +1839,7 @@ RectTransform:
   m_LocalScale: {x: 0.5534972, y: 0.5534972, z: 0.5534972}
   m_Children: []
   m_Father: {fileID: 1552304682}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1927,6 +1995,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 207572371}
   - {fileID: 1498940264}
   - {fileID: 1239256724}
   - {fileID: 1797610272}
@@ -2002,7 +2071,7 @@ GameObject:
   - component: {fileID: 1698819044}
   - component: {fileID: 1698819043}
   m_Layer: 5
-  m_Name: RoundLeft 5
+  m_Name: RoundLeft 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2020,7 +2089,7 @@ RectTransform:
   m_Children:
   - {fileID: 1244862232}
   m_Father: {fileID: 1239256724}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.048, y: 0}
   m_AnchorMax: {x: 0.15, y: 1}
@@ -2071,7 +2140,7 @@ GameObject:
   - component: {fileID: 1753229119}
   - component: {fileID: 1753229118}
   m_Layer: 5
-  m_Name: RoundLeftWin 2
+  m_Name: RoundLeftWin 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2159,7 +2228,7 @@ RectTransform:
   - {fileID: 2025159990}
   - {fileID: 1813041005}
   m_Father: {fileID: 1552304682}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6744598, y: 0.8963051}
   m_AnchorMax: {x: 0.97748816, y: 0.9493475}
@@ -2246,7 +2315,7 @@ GameObject:
   - component: {fileID: 1821819406}
   - component: {fileID: 1821819405}
   m_Layer: 5
-  m_Name: RoundLeftWin 4
+  m_Name: RoundLeftWin 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2314,7 +2383,7 @@ GameObject:
   - component: {fileID: 1829039472}
   - component: {fileID: 1829039471}
   m_Layer: 5
-  m_Name: RoundLeft 2
+  m_Name: RoundLeft 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2332,7 +2401,7 @@ RectTransform:
   m_Children:
   - {fileID: 1753229117}
   m_Father: {fileID: 1239256724}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.601, y: 1}
@@ -2383,7 +2452,7 @@ GameObject:
   - component: {fileID: 1936544882}
   - component: {fileID: 1936544881}
   m_Layer: 5
-  m_Name: RoundLeftWin 1
+  m_Name: RoundLeftWin 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
