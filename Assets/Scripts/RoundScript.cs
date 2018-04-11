@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class RoundScript : MonoBehaviour
 {
-    public Image round;
+    //public Image round;
     public bool roundLeftWin;
     public bool roundRightWin;
 
