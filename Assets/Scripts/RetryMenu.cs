@@ -23,9 +23,9 @@ public class RetryMenu : MonoBehaviour
         {
             retryMenu.SetActive(true);
             timeLeft -= Time.deltaTime;
-            if(timeLeft < 0)
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
+            if (timeLeft < 0)
+                SceneManager.LoadScene("Menu");
         }
         else
         {
