@@ -2049,11 +2049,11 @@ MonoBehaviour:
   roundLeftWin: 0
   roundRightWin: 0
   roundLeftPoints:
-  - {fileID: 1936544879}
-  - {fileID: 1753229116}
-  - {fileID: 1479072753}
-  - {fileID: 1821819403}
   - {fileID: 1244862231}
+  - {fileID: 1821819403}
+  - {fileID: 1479072753}
+  - {fileID: 1753229116}
+  - {fileID: 1936544879}
   roundRightPoints:
   - {fileID: 704917157}
   - {fileID: 1260895800}
