@@ -5,18 +5,48 @@ using UnityEngine.UI;
 
 public class RoundScript : MonoBehaviour
 {
-    //public Image round;
-    public bool roundLeftWin;
-    public bool roundRightWin;
 
-    public List<GameObject> roundLeftPoints = new List<GameObject>();
-    public List<GameObject> roundRightPoints = new List<GameObject>();
+    #region public var
 
-    void Update ()
+    public List<GameObject> roundPlayerOne;
+    public List<GameObject> roundPlayerTwo;
+
+    public int numberOfRoundWinByPlayerOne;
+    public int numberOfRoundWinByPlayerTwo;
+
+    #endregion
+
+    #region system
+
+    private void Update()
     {
-        /*if (roundWin == true)
-            round.fillAmount = 1f;
-        else
-            round.fillAmount = 0f;*/
-	}
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            ActivateRoundIcon(roundPlayerOne, numberOfRoundWinByPlayerOne-1);
+        }
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            ActivateRoundIcon(roundPlayerTwo, numberOfRoundWinByPlayerTwo - 1);
+        }
+    }
+
+    #endregion
+
+    #region private function
+
+    private void ActivateRoundIcon(List<GameObject> playerRound, int number)
+    {
+        for (int i = 0; i <= number; i++)
+        {
+            playerRound[i].SetActive(true);
+        } 
+        
+    }
+
+    #endregion
+
+    #region private var
+    #endregion
+
 }

@@ -7,11 +7,11 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameisPaused = false;
     public GameObject pauseMenuUI;
-    private GameManagerScript GMS;
+    //private GameManagerScript GMS;
 
 	void Start ()
     {
-        GMS = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+        //GMS = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
 	}
 	
 	void Update ()
