@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManagerScript : MonoBehaviour
 {
     public bool counterDownDone = false;
+    public bool finishRound = false;
 
 	void Start ()
     {
@@ -15,17 +16,4 @@ public class GameManagerScript : MonoBehaviour
     {
 		
 	}
-
-    /*Remy's code : 
-     *              private GameManagerScripts GMS;
-     *              
-     *              void Start()
-     *              {
-     *                  GMS = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
-     *              }
-     *              
-     *              if(GMS.counterDownDone == true)
-                        Script == true;
-                    else
-                        Scripts == False;*/
 }
