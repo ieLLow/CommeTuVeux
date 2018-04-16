@@ -39,7 +39,7 @@ public class RoundScript : MonoBehaviour
             ActivateRoundIcon(roundPlayerTwo, numberOfRoundWinByPlayerTwo - 1);
         }
 
-        /*if (numberOfRoundWinByPlayerOne > 3 && )
+        /*if (numberOfRoundWinByPlayerOne > 3 && GameObject.Find("name of the gameobject holding the script with the bool").GetComponent<name of the script holding the bool>().IsLightOn )
         {
 
         }
