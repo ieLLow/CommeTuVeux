@@ -15,10 +15,6 @@ public class GameManagerScript : MonoBehaviour
 	
 	void Update ()
     {
-		if(counterDownDone == true)
-        {
-
-        }
 
 	}
 }

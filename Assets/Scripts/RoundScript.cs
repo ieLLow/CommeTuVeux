@@ -9,6 +9,8 @@ public class RoundScript : MonoBehaviour
     #region public var
 
     public GameObject finalRound;
+    public bool finalRoundActive = false;
+    private GameManagerScript GMS;
 
     public List<GameObject> roundPlayerOne;
     public List<GameObject> roundPlayerTwo;
@@ -19,6 +21,11 @@ public class RoundScript : MonoBehaviour
     #endregion
 
     #region system
+
+    private void Start()
+    {
+        GMS = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+    }
 
     private void Update()
     {

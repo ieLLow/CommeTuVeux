@@ -5,7 +5,6 @@ using UnityEngine;
 public class SetCountDown : MonoBehaviour
 {
     private GameManagerScript GMS;
-    public Animator countDownAnim;
 
     public void SetCountDownNow()
     {
