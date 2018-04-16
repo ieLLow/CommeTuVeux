@@ -8,7 +8,7 @@ AnimatorController:
   m_Name: CountDown
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: ActiveCountDown
+  - m_Name: CountStart
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -27,6 +27,20 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+--- !u!206 &206313364153921756
+BlendTree:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Blend Tree
+  m_Childs: []
+  m_BlendParameter: Blend
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 1
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
 --- !u!206 &206792051703253926
 BlendTree:
   m_ObjectHideFlags: 1
@@ -49,7 +63,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: ActiveCountDown
+    m_ConditionEvent: CountStart
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102833313989399288}
@@ -73,7 +87,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: ActiveCountDown
+    m_ConditionEvent: CountStart
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102093224765270202}

@@ -5,16 +5,21 @@ using UnityEngine;
 public class GameManagerScript : MonoBehaviour
 {
 
+    public Animator animCount;
+    private GameManagerScript GMS;
+
+    public bool countStart;
     public bool counterDownDone = false;
-    public bool finishRound = false;
 
 	void Start ()
     {
-		
-	}
+        animCount = gameObject.GetComponent<Animator>();
+        GMS = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+    }
 	
 	void Update ()
     {
-
-	}
+        if (GMS.counterDownDone == true)
+            animCount.SetBool("countStart", false);
+    }
 }

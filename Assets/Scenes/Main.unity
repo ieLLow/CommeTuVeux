@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -885,6 +885,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 282794771}
+--- !u!95 &371023442 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95847270916825850, guid: 1fed7e792e59a43499060f7681886db5,
+    type: 2}
+  m_PrefabInternal: {fileID: 379623712}
 --- !u!1001 &379623712
 Prefab:
   m_ObjectHideFlags: 0
@@ -985,6 +990,11 @@ Prefab:
     - target: {fileID: 1991177157753864, guid: 1fed7e792e59a43499060f7681886db5, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114789247301335432, guid: 1fed7e792e59a43499060f7681886db5,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1fed7e792e59a43499060f7681886db5, type: 2}
@@ -1423,8 +1433,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02fc931d0e7d28249a906d4e3bcbe084, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animCount: {fileID: 371023442}
+  countStart: 0
   counterDownDone: 0
-  finishRound: 0
 --- !u!4 &820269219
 Transform:
   m_ObjectHideFlags: 0
@@ -2431,7 +2442,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 957728d01f6a9b84b94dd7477d67d880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startFinal: 0
   finalRound: {fileID: 226519750}
+  startRound: {fileID: 226519754}
   roundPlayerOne:
   - {fileID: 1244862231}
   - {fileID: 1821819403}

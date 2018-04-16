@@ -8,9 +8,11 @@ public class RoundScript : MonoBehaviour
 
     #region public var
 
+    public bool startFinal;
+
     public GameObject finalRound;
-    public bool finalRoundActive = false;
     private GameManagerScript GMS;
+    public Animator startRound;
 
     public List<GameObject> roundPlayerOne;
     public List<GameObject> roundPlayerTwo;
@@ -25,6 +27,7 @@ public class RoundScript : MonoBehaviour
     private void Start()
     {
         GMS = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+        startRound = gameObject.GetComponent<Animator>();
     }
 
     private void Update()
@@ -39,15 +42,15 @@ public class RoundScript : MonoBehaviour
             ActivateRoundIcon(roundPlayerTwo, numberOfRoundWinByPlayerTwo - 1);
         }
 
-        /*if (numberOfRoundWinByPlayerOne > 3 && GameObject.Find("name of the gameobject holding the script with the bool").GetComponent<name of the script holding the bool>().IsLightOn )
+        if (numberOfRoundWinByPlayerOne > 3 && GMS.counterDownDone == true)
         {
-
+            startRound.SetBool("startFinal", true);
         }
 
-        if (numberOfRoundWinByPlayerTwo > 3 && )
+        if (numberOfRoundWinByPlayerTwo > 3 && GMS.counterDownDone == true)
         {
-
-        }*/
+            startRound.SetBool("startFinal", true);
+        }
     }
 
     #endregion
