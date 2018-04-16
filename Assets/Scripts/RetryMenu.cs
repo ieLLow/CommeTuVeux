@@ -9,7 +9,7 @@ public class RetryMenu : MonoBehaviour
 
     public bool isDead = false;
     public GameObject retryMenu;
-    public float timeLeft = 5f;
+    public float timeLeft = 9f;
 
     void Start ()
     {

@@ -8,6 +8,8 @@ public class RoundScript : MonoBehaviour
 
     #region public var
 
+    public GameObject finalRound;
+
     public List<GameObject> roundPlayerOne;
     public List<GameObject> roundPlayerTwo;
 
@@ -29,6 +31,16 @@ public class RoundScript : MonoBehaviour
         {
             ActivateRoundIcon(roundPlayerTwo, numberOfRoundWinByPlayerTwo - 1);
         }
+
+        /*if (numberOfRoundWinByPlayerOne > 3 && )
+        {
+
+        }
+
+        if (numberOfRoundWinByPlayerTwo > 3 && )
+        {
+
+        }*/
     }
 
     #endregion

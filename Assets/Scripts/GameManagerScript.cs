@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManagerScript : MonoBehaviour
 {
+
     public bool counterDownDone = false;
     public bool finishRound = false;
 
@@ -14,6 +15,10 @@ public class GameManagerScript : MonoBehaviour
 	
 	void Update ()
     {
-		
+		if(counterDownDone == true)
+        {
+
+        }
+
 	}
 }
